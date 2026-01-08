@@ -1,13 +1,12 @@
 # Loan-Defaulter-Prediction-using-ML-Algorithms
 
-📊 Loan Defaulter Prediction using Machine Learning Algorithms
-📌 Overview
+📊**Loan Defaulter Prediction using Machine Learning Algorithms**
 
 This project focuses on predicting loan default risk using supervised machine learning techniques. The objective is to build and evaluate multiple classification models to identify borrowers who are likely to default, helping financial institutions improve risk assessment and decision-making.
 
 The pipeline includes data preprocessing, feature importance analysis, class imbalance handling, model comparison using cross-validation, and ROC-based evaluation.
 
-🧠 Problem Statement
+**🧠 Problem Statement**
 
 Loan default prediction is a critical task in the financial domain. Given borrower demographic and financial attributes, the goal is to classify whether a loan applicant is likely to default (1) or not (0).
 
@@ -19,7 +18,7 @@ Identifying important predictive features
 
 Comparing multiple ML algorithms fairly
 
-🗂️ Dataset
+🗂️ **Dataset**
 
 The dataset consists of borrower-related financial and demographic features.
 
@@ -31,8 +30,8 @@ Categorical features are one-hot encoded.
 
 A random sample of 3000 records is used for experimentation.
 
-⚙️ Methodology
-1️⃣ Data Preprocessing
+⚙️ **Methodology**
+1️⃣ **Data Preprocessing**
 
 Removal of irrelevant features (LoanID)
 
@@ -42,11 +41,11 @@ Feature scaling using StandardScaler
 
 Handling class imbalance using SMOTE (Synthetic Minority Over-sampling Technique)
 
-2️⃣ Feature Importance Analysis
+2️⃣ **Feature Importance Analysis**
 
 A Random Forest Regressor is used to estimate feature importance, helping identify the most influential factors contributing to loan default prediction.
 
-3️⃣ Machine Learning Models Used
+3️⃣ **Machine Learning Models Used**
 
 The following classifiers are trained and evaluated:
 
@@ -62,7 +61,7 @@ Naive Bayes
 
 XGBoost
 
-4️⃣ Model Evaluation
+4️⃣ **Model Evaluation**
 
 Models are evaluated using 5-fold cross-validation with the following metrics:
 
@@ -76,15 +75,7 @@ F1 Score
 
 ROC-AUC
 
-Additionally:
-
-ROC curves are plotted for each classifier
-
-A comparative performance plot is generated
-
-The best-performing model is selected based on ROC-AUC
-
-5️⃣ Best Model Selection
+5️⃣ **Best Model Selection**
 
 The model with the highest ROC-AUC score is automatically selected and trained on the full resampled dataset.
 
@@ -92,7 +83,7 @@ The model with the highest ROC-AUC score is automatically selected and trained o
 
 An interactive prediction module allows users to input feature values manually and receive a real-time loan default prediction based on the selected best model.
 
-🛠️ Technologies & Libraries
+🛠️ **Technologies & Libraries**
 
 Programming Language: Python
 
@@ -108,7 +99,7 @@ Imbalanced-learn (SMOTE)
 
 Matplotlib
 
-📈 Results
+📈 **Results**
 
 The project demonstrates that ensemble-based models (Random Forest, XGBoost) generally outperform simpler classifiers.
 

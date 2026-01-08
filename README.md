@@ -31,6 +31,7 @@ Categorical features are one-hot encoded.
 A random sample of 3000 records is used for experimentation.
 
 ⚙️ **Methodology**
+
 1️⃣ **Data Preprocessing**
 
 Removal of irrelevant features (LoanID)
